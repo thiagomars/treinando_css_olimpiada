@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Desafio Menu</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Oswald', sans-serif;
+            background-color: lightgray;
+        }
+
+        .cabecalho {
+            background: #333;
+            border-bottom: solid 5px #4faddb;
+            height: 80px;
+            box-sizing: content-box;
+        }
+
+        .logo {
+            display: inline-block;
+            height: 80px;
+            padding: 15px;
+        }
+
+        .logo img {
+            height: 100%;
+        }
+
+        .menu-toggle {
+            float: right;
+            color: #eee;
+            background-color: #555;
+            border: solid 1px #777;
+            border-radius: 5px;
+            height: 40px;
+            padding: 10px 20px;
+            margin: 20px 15px;
+        }
+
+        .menu {
+            display: inline-block;
+            vertical-align: top;
+            height: 80px;
+            padding: 25px;
+        }
+
+        .menu ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .menu li {
+            display: inline-block;
+        }
+
+        .cabecalho a {
+            text-decoration: none;
+            color: #eee;
+            font-size: 1.3em;
+        }
+
+        .menu a {
+            padding: 15px;
+        }
+
+        .autenticacao {
+            float: right;
+            height: 80px;
+            padding: 25px;
+        }
+
+        .menu a:hover,
+        .menu a.selected {
+            background-color: #4faddb;
+            color: #000;
+        }
+
+        .botao {
+            border-radius: 30px;
+            padding: 10px 25px;
+            margin: 10px;
+        }
+
+        .destaque {
+            background: #f50a31;
+            color: #fff;
+        }
+
+        @media(min-width: 679px) {
+            .menu-toggle {
+                display: none;
+            }
+        }
+
+        @media(max-width: 680px) {
+            .menu {
+                display: none;
+            }
+        }
+
+        @media(max-width: 910px) {
+            .autenticacao {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="#inicio">
+            </a>
+        </div>
+        <button class="menu-toggle">
+            <i class="fa fa-lg fa-bars"></i>
+        </button>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#inicio">Início</a>
+                </li>
+               
+            </ul>
+        </nav>
+        <aside class="autenticacao">
+            <a href="#login">Login</a>
+            <a href="#registar" class="botao destaque">Registrar</a>
+        </aside>
+    </header>
+
+    <header class="container" id="pag1">
+        <h1 id="logo">OLIMpiada</h1>
+
+
+        <p>A OLIMpiada é uma competição que tem como objetivo estimular o interesse pela Computação e por Ciências em geral, proporcionando novos desafios aos estudantes.</p>
+
+        <p>Aliquam non sapien vel odio interdum iaculis. Nulla non enim nunc. Morbi eget orci velit. Aenean finibus sapien ipsum, et malesuada eros lobortis id. Aenean eu nisl sit amet neque commodo gravida. Phasellus non urna gravida, efficitur augue sed, iaculis elit. Maecenas id dapibus nisi. Curabitur placerat nulla sit amet orci varius rutrum. Aliquam est velit, bibendum ut ultrices eget, interdum a risus.</p>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tincidunt porta volutpat. Suspendisse sed nibh ac lectus fermentum imperdiet. Sed semper enim vitae sollicitudin consectetur. Praesent vel auctor nulla. Phasellus euismod quam ut ex condimentum iaculis. Nunc pretium tincidunt interdum. Etiam porta, lacus luctus placerat porttitor, neque nibh molestie neque, ut congue mauris erat id nulla. Nunc eu ornare est. Mauris iaculis ligula sed nisl maximus, ut venenatis elit pulvinar. Sed cursus in erat non vulputate. Cras rutrum justo ut lectus ultricies, eu finibus dui dapibus.</p>
+    </header>
+    
+    <header class="container">
+        <h1>Anos Anteriores</h1>
+
+        <div class="anterior">
+            <div class="ano_anterior">
+                <h2>Em 2021...</h2>
+                <img src="img/comp1.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc convallis, purus in lacinia interdum, lorem tortor molestie libero, vel molestie.</p>
+            </div>
+    
+            <div class="ano_anterior">
+                <h2>Em 2020...</h2>
+                <img src="img/comp2.jpeg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc convallis, purus in lacinia interdum, lorem tortor molestie libero, vel molestie.</p>
+            </div>
+    
+            <div class="ano_anterior">
+                <h2>Em 2019...</h2>
+                <img src="img/comp3.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc convallis, purus in lacinia interdum, lorem tortor molestie libero, vel molestie.</p>
+            </div>
+    
+            <div class="ano_anterior">
+                <h2>Em 2018...</h2>
+                <img src="img/comp4.jpg">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc convallis, purus in lacinia interdum, lorem tortor molestie libero, vel molestie.</p>
+            </div>
+        </div>
+    </header>
+
+    <header class="container">
+        <h1>Campeões dos Anos Anteriores</h1>
+
+        <table class="classific">
+            <tr>
+                <td>Classificação</td>
+                <td>Nome</td>
+                <td>Pontuação</td>
+                <td>Local</td>
+                <td>Ano</td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>Raimundo Raimundes de Raim</td>
+                <td>1437,21</td>
+                <td>Fortaleza - CE</td>
+                <td>2021</td>
+            </tr>
+            
+            <tr>
+                <td>2</td>
+                <td>João José Junior</td>
+                <td>1377,74</td>
+                <td>Sobral - CE</td>
+                <td>2020</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Luquinhas Luan Lima</td>
+                <td>1371,06</td>
+                <td>Sobral - CE</td>
+                <td>2019</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Maria Mariana Marques Mato</td>
+                <td>1369,22</td>
+                <td>Fortaleza - CE</td>
+                <td>2018</td>
+            </tr>
+            <tr>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+                <td>...</td>
+            </tr>
+        </table>
+    </header>
+
+    <header class="container">
+        <h1>Descrição</h1>
+        
+        <div class="container_desc">
+            <div class="content">
+                <h3>PARTICIPAÇÃO</h3>
+
+                <p>Podem participar quaisquer alunos que se encaixem nas seguintes categorias:</p>
+
+                <ul>
+                    <li>NÍVEL JÚNIOR – Ensino Fundamental</li>
+                    <li>NÍVEL 1 – Ensino Fundamental e 1° ano do Ensino Médio</li>
+                    <li>NÍVEL 2 – Ensino Fundamental e Ensino Médio</li>
+                    <li>NÍVEL SÊNIOR – 4ª série do Ensino Médio e 1° ano do Ensino Superior</li>
+                </ul>
+            </div>
+
+            <div class="content">
+                <h3>INSCRIÇÃO</h3>
+
+                <p>A inscrição é feita por um professor responsável, diretamente no site oficial da olimpíada. Caberá a este professor cuidar da aplicação das provas na escola.</p>
+            </div>
+
+            <div class="content">
+                <h3>PROVAS</h3>
+
+                <p>As provas serão compostas de tarefas de programação cuja solução envolve a implementação de um programa de computador em uma das linguagens de programação permitidas na OLIMpiada. A olimpíada possui três fases, sendo elas:</p>
+
+                <ul>
+                    <li>1ª FASE – Local</li>
+                    <li>2ª FASE – Estadual</li>
+                    <li>3ª FASE – Nacional</li>
+                </ul>
+
+                <p>A provas da 1ª Fase são realizadas na escola, contudo esse ano também será possível realizar a prova online.</p>
+            </div>
+
+            <div class="content">
+                <h3>PREMIAÇÃO</h3>
+
+                <p>A OLIMpiada entrega certificados de participação para todos os participantes. Os melhores colocados receberão medalhas de ouro, prata e bronze, assim como com certificados de menção honrosa.</p>
+
+                <p>Além disso, os mais bem colocados da modalidade Programação (com exceção do Nível Sênior) serão convidados para a Semana Olímpica da OLIMpiada, no Instituto de Computação da UFC, onde participarão de cursos de Programação Avançada.</p>
+            </div>
+
+            <div class="content">
+                <h3>INFORMAÇÕES ADICIONAIS</h3>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque non mi rutrum, aliquet orci ut, vulputate elit. In nisi dui, tempor vel risus nec, rutrum mattis leo. Nulla tempus neque at mauris euismod, id pharetra.</p>
+            </div>
+        </div>
+    </header>
+
+    <header class="container">
+        <h1>Como será a Edição de 2022 ???</h1>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sit amet venenatis ex, ut feugiat metus. Nam tincidunt magna et eros venenatis ultricies. Vestibulum pulvinar efficitur mauris eu feugiat. Pellentesque in viverra lacus. Nam lacinia ex sed sem egestas, in hendrerit risus vulputate. Duis eget libero ut massa consequat convallis et nec ex. Sed rutrum dignissim urna vehicula vulputate. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Sed eu nulla magna. In feugiat, sem a ultricies luctus, enim enim elementum.</p>
+        
+        <details>
+            <summary>JAVA</summary>
+            <p>Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de programadores chefiada por James Gosling, na empresa Sun Microsystems. Em 2008 o Java foi adquirido pela empresa Oracle Corporation.</p>
+        </details>
+        
+        <details>
+            <summary>PYTHON</summary>
+            <p>Python é uma linguagem de programação de alto nível, interpretada de script, imperativa, orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991.</p>
+        </details>
+
+        <details>
+            <summary>C++</summary>
+            <p>C++ é uma linguagem de programação compilada multi-paradigma e de uso geral. Desde os anos 1990 é uma das linguagens comerciais mais populares, sendo bastante usada também na academia por seu grande desempenho e base de utilizadores.</p>
+        </details>
+
+        <details>
+            <summary>SCALA</summary>
+            <p>Scala é uma linguagem de programação de propósito geral, diga-se multiparadigma, projetada para expressar padrões de programação comuns de uma forma concisa, elegante e type-safe. Ela incorpora recursos de linguagens orientadas a objetos e funcionais.</p>
+        </details>
+
+        <div class="linguagens">
+            <img src="img/java.png">
+            <img src="img/python.png">
+            <img src="img/cpp.png">
+            <img src="img/scala.png">
+        </div>
+    </header>
+
+    <header class="container">
+        <h1>Exemplos de possíveis questões</h1>
+
+        <details>
+            <summary>Vetores</summary>
+
+            <h4>Nível: Fácil</h4>
+            <p>Leia um vetor de 16 posições e troque os 8 primeiros valores pelos 8 últimos e vice-e-versa. Escreva ao final o vetor obtido.</p>
+
+            <h4>Nível: Intermediário</h4>
+            <p>Leia um vetor de 40 posições e acumule os valores do primeiro elemento no segundo, deste no terceiro e assim por diante. Ao final, escreva o vetor obtido.</p>
+        </details>
+
+        <details>
+            <summary>Função</summary>
+            
+            <h4>Nível: Fácil</h4>
+            <p>Faça uma função que recebe por parâmetro o raio de uma esfera e calcula o seu volume (v = 4/3 * P * R<span>3</span>).</p>
+
+            <h4>Nível: Difícil</h4>
+            <p>Faça um procedimento que recebe, por parâmetro, a hora de inicio e a hora de término de um jogo, ambas subdivididas em 2 valores distintos: horas e minutos. O procedimento deve retornar, também por parâmetro, a duração do jogo em horas e minutos, considerando que o tempo máximo de duração de um jogo é de 24 horas e que o jogo pode começar em um dia e terminar no outro.</p>
+        </details>
+
+        <details>
+            <summary>Laços</summary>
+
+            <h4>Nível: Intermediário</h4>
+            <p>Faça um programa que usando laços de repetição receba a idade e o peso de 15 pessoas. Calcule e mostre as médias dos pesos das pessoas da mesma faixa etária. As faixas etárias são: de 1 a 10 anos, de ll a 20 anos, de 21 a 30 anos e maiores de 31 anos.</p>
+
+            <h4>Nível: Difícil</h4>
+            <p>Faça um programa para calcular n! (Fatorial de n), sendo que o valor inteiro de n é fornecido pelo usuário. Sabe-se que: N! = 1 * 2 * 3 * … (n – 1) * n 0! = 1, por definição</p>
+        </details>
+    </header>
+
+    <header class="container">
+        <div id="ativ_insc">
+            <div class="meia">
+                <h1>Agenda de Atividades</h1>
+                <table>
+                    <tr>
+                        <td>INICIANTE</td>
+                        <td>INTERMEDIÁRIO</td>
+                        <td>AVANÇADO</td>
+                    </tr>
+                    <tr>
+                        <td>Quinta</td>
+                        <td>Sexta</td>
+                        <td>Sábado</td>
+                    </tr>
+                    <tr>
+                        <td>26/05/2022</td>
+                        <td>27/05/2022</td>
+                        <td>28/05/2022</td>
+                    </tr>
+                    <tr>
+                        <td>19:30 horas</td>
+                        <td>19:00 horas</td>
+                        <td>14:00 horas</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="cad-insc">
+                <div class="meia" id="caixa_cad">
+                    <h1>Inscrições</h1>
+                    <form method="POST">
+                        <label>Nome Completo</label>
+                        <input type="text" name="nome" id="nome">
+                        <label>Data de Nascimento</label>
+                        <input type="date" name="data" id="data">
+                        <label>CPF</label>
+                        <input type="number" name="cpf" id="cpf">
+                        <label>Universidade</label>
+                        <select id="universidade" name="universidade">
+                            <option value="1">Selecione...</option>
+                            <option value="2">Universidade Federal do Ceará - UFC - Campus Sobral</option>
+                            <option value="3">Universidade Federal do Ceará - UFC - Campus Fortaleza</option>
+                            <option value="4">Universidade Federal do Ceará - UFC - Campus Russas</option>
+                            <option value="5">Universidade Vale do Acaraú</option>
+                            <option value="6">Universidade Estadual do ceará</option>
+                            <option value="7">Outra</option>
+                        </select>
+                        <label>Apelido</label>
+                        <label>Este será seu login e como gostaria de ser chamado</label>
+                        <input type="text" name="apelido" id="apelido">
+                        <label>Senha</label>
+                        <input type="password" name="senha" id="senha">
+                        <label>Repetir a Senha</label>
+                        <input type="password" name="senha-repetida" id="senha-repetida">
+                        <input type="submit" name="submit" value="CADASTRAR">
+                    </form>
+                </div>
+                <div class="container" id="caixa_login">
+                    <p>Login</p>
+                    <form>
+                        <input type="text" value="login" name="login" id="login_input">
+                        <input type="password" name="pass" id="pass">
+                        <input type="submit" name="submit" value="ENTRAR">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+    
+
+</body>
+
+</html>
